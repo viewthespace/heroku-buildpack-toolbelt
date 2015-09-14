@@ -62,6 +62,7 @@ mv heroku-client/* .
 rmdir heroku-client
 
 echo "updating to latest heroku cli"
+ls $BUILD_DIR/$VENDORED_TOOLBELT
 $BUILD_DIR/$VENDORED_TOOLBELT/bin/heroku update
 
 echo "-----> Moving the netrc generation script into app/.profile.d"
