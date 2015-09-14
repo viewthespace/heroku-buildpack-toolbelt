@@ -61,9 +61,8 @@ fi
 mv heroku-client/* .
 rmdir heroku-client
 
-echo "updating to latest heroku cli"
-ls $BUILD_DIR/$VENDORED_TOOLBELT
-$BUILD_DIR/$VENDORED_TOOLBELT/bin/heroku update
+#install vts needed plugins
+$BUILD_DIR/$VENDORED_TOOLBELT/bin/heroku plugins:install heroku-pipelines
 
 echo "-----> Moving the netrc generation script into app/.profile.d"
 mkdir -p $BUILD_DIR/.profile.d
