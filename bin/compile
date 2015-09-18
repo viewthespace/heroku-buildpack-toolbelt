@@ -63,7 +63,7 @@ rmdir heroku-client
 
 #install vts needed plugins
 $BUILD_DIR/$VENDORED_TOOLBELT/bin/heroku plugins:install heroku-pipelines
-cp -R $BUILD_DIR/.heroku $BUILD_DIR/$VENDORED_TOOLBELT/
+#cp -R $BUILD_DIR/.heroku $BUILD_DIR/$VENDORED_TOOLBELT/
 
 echo "-----> Moving the netrc generation script into app/.profile.d"
 mkdir -p $BUILD_DIR/.profile.d
