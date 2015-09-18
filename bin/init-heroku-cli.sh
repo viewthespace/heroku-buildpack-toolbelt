@@ -4,6 +4,7 @@
 PATH=$PATH:/app/vendor/heroku-toolbelt/bin
 
 #copy plugins and stuff
-#cp -R /app/vendor/heroku-toolbelt/.heroku ~
+echo "copying heroku plugins to home directory"
+cp -R /app/vendor/heroku-toolbelt/.heroku ~
 
 
